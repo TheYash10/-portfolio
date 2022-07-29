@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+}
+
+.ham img {
+    position: fixed;
+    z-index: 1;
+    width: 40px;
+    height: 30px;
+    background-color: antiquewhite;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: antiquewhite;
+    width: 210px;
+    font-family: 'Lobster', cursive;
+    height: 100vh;
+    font-weight: bold;
+    transition: transform 0.25s ease-in;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+    /* transition: transform 0.75s ease-in; */
+}
+
+.sidebar nav {
+    padding: 44px;
+}
+
+.sidebar nav li {
+    font-size: 20px;
+    list-style: none;
+    padding: 25px 0px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar nav ul li a:hover {
+    color: grey;
+}
+
+.container {
+    display: flex;
+}
+
+#first {
+    align-items: center;
+    margin-left: 225px;
+}
+
+.infocontainer {
+    background-color: lavender;
+    height: 65vh;
+    width: 70vw;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+.hiii {
+    font-size: 70px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.name {
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.intro {
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+#CV {
+    padding: 5px;
+    border-radius: 14px;
+    color: white;
+    background-color: salmon;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+#CV:hover {
+    background-color: white;
+    color: salmon;
+    transition: 0.75s;
+}
+
+.devpic img {
+    height: 65vh;
+    width: auto;
+}
+
+
+/* Contact Form  */
+
+.contactme {
+    background: url(contactme1.jpg);
+    background-size: cover;
+    margin-top: 200px;
+}
+
+.heading {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading+h1 {
+    justify-items: center;
+    padding-bottom: 20px;
+    font-size: 45px;
+}
+
+.heading h3 {
+    font-size: 25px;
+    color: blue;
+}
+
+span {
+    font-size: 45px;
+    color: Red;
+}
+
+table {
+    padding: 0px;
+}
+
+.contactcontainer {
+    width: 48vw;
+    height: 80vh;
+    border: 0px solid black;
+    border-radius: 4px;
+    display: grid;
+    margin: 0px 90px;
+    background-color: none;
+    justify-content: center;
+}
+
+.contactcontainer h2 {
+    color: blue;
+    font-size: 35px;
+    margin: 20px 0px;
+    margin-bottom: -40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 0px solid black;
+    margin: 15px 21px;
+    border-radius: 15px;
+    text-align: center;
+    width: 187px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 0px solid black;
+    margin: 15px 2px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #ffffff;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: 0px solid black;
+    cursor: grab;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    background-color: chocolate;
+    transition: 0.75s;
+}
+
+table+p {
+    margin-top: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+
+/* About me */
+
+.aboutme {
+    margin-top: 150px;
+}
+
+.aboutmecontainer {
+    display: flex;
+}
+
+.aboutme h1 {
+    margin-left: 17px;
+}
+
+.aboutmecontainer img {
+    width: 600px;
+    height: 300px;
+    margin: 0px 90px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.aboutme p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 17px;
+}
+
+
+/* Testimonail */
+
+#fourth {
+    margin-top: 200px;
+}
+
+.fourth {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'dosis';
+    color: #080808;
+    background: linear-gradient(110deg, #fc6a6a 0%, #ffc69d 100%);
+}
+
+.containertestimonial {
+    position: relative;
+    width: 800px;
+    min-width: 350px;
+    min-height: 250px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 300%;
+    /* 300% 'caz we have 3 cards */
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.card {
+    width: 800px;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.card-thumb {
+    width: 70%;
+    height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.client-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-name {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 20px;
+    background: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.card-body {
+    width: 120%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.review {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.rating {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicators button {
+    background: none;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+button.active {
+    width: 40px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 50%;
+        margin: auto;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card-thumb {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .card-body {
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+    }
+}
+
+
+/* My Projects */
+
+.projectcontainer {
+    display: inline-table;
+}
+
+.img {
+    width: 500px;
+    height: 400px;
+    margin: 50px 125px;
+}
+
+.project h1 {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.project p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
